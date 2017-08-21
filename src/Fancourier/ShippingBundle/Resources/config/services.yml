@@ -1,0 +1,5 @@
+services:
+    fancourier_shipping:
+        class: Fancourier\ShippingBundle\Service\Shipping
+        tags:
+            - { name: shipping.provider }

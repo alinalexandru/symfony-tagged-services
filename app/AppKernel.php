@@ -16,6 +16,10 @@ class AppKernel extends Kernel
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new AppBundle\AppBundle(),
+            new Innobyte\TaggedServicesDemoBundle\InnobyteTaggedServicesDemoBundle(),
+            new PayU\PaymentBundle\PayUPaymentBundle(),
+            new Fancourier\ShippingBundle\FancourierShippingBundle(),
+            new MobilPay\PaymentBundle\MobilPayPaymentBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

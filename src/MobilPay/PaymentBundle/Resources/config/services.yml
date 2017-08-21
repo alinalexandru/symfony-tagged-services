@@ -1,0 +1,5 @@
+services:
+    mobil_pay_payment:
+        class: MobilPay\PaymentBundle\Service\Payment
+        tags:
+            - 'payment.provider'

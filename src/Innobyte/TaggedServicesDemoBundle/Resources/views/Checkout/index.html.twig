@@ -1,0 +1,21 @@
+<form action="{{ path('place_order') }}" method="post">
+    <h1>Select shipping</h1>
+    <ul>
+        {% for shipping in shippingMethods  %}
+            <li>
+                <input type="radio" name="shipping" value="{{ shipping.getIdentifier() }}"/> {{ shipping.getName() }}
+            </li>
+        {% endfor %}
+    </ul>
+
+    <h1>Select payment</h1>
+
+    <ul>
+        {% for payment in paymentMethods  %}
+            <li>
+                <input type="radio" name="payment" value="{{ payment.getIdentifier() }}"/> {{ payment.getName() }}
+            </li>
+        {% endfor %}
+    </ul>
+    <input type="submit" value="Submit"/>
+</form>

@@ -1,3 +1,12 @@
+mobil_pay_payment:
+    resource: "@MobilPayPaymentBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+innobyte_tagged_services_demo:
+    resource: '@InnobyteTaggedServicesDemoBundle/Controller/'
+    type: annotation
+
 app:
     resource: '@AppBundle/Controller/'
     type: annotation

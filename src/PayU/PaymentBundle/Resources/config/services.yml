@@ -1,0 +1,5 @@
+services:
+    pay_u_payment:
+        class: PayU\PaymentBundle\Service\Payment
+        tags:
+            - { name: payment.provider }

@@ -1,0 +1,17 @@
+services:
+    innobyte_twig_extension:
+        class: Innobyte\TaggedServicesDemoBundle\TwigExtension\CustomExtension
+        tags:
+            - { name: "twig.extension" }
+
+    innobyte_api_validation_listener:
+        class: Innobyte\TaggedServicesDemoBundle\Listener\ApiValidationListener
+        tags:
+            - { name: kernel.event_listener, event: kernel.request, priority: 0 }
+            - { name: kernel.event_listener, event: kernel.response, priority: 0}
+
+    innobyte_shipping_factory:
+        class: Innobyte\TaggedServicesDemoBundle\Service\ShippingFactory
+
+    innobyte_payment_factory:
+        class: Innobyte\TaggedServicesDemoBundle\Service\PaymentFactory
