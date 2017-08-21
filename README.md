@@ -1,4 +1,4 @@
-symfony-tagged-services
+DEMO symfony tagged services
 =======================
 
-A Symfony project created on June 6, 2017, 8:15 pm.
+Slides available at https://www.slideshare.net/alinalexandru/symfony-tagged-services
